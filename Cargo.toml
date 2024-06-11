@@ -1,0 +1,19 @@
+[package]
+name = "gameoflife"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "gameoflife"
+path = "src/gameoflife.rs"
+
+[dependencies]
+color-eyre = "0.6.3"
+ratatui = "0.26.3"
+crossterm = "0.27.0"
+palette = "0.7.6"
+rand = "0.8.5"
+clap = { version = "4.5.7", features = ["derive"] }
+
+[profile.release]
+debug = true
